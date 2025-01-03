@@ -41,9 +41,9 @@
     @apply text-gray-800 font-light;
   }
   h1, h2, h3, h4 {
-    @apply font-['Space_Grotesk'] font-bold tracking-tight;
+    @apply font-['Space_Grotesk'] font-extralight text-xs tracking-tight;
   }
   h1 {
-    @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+    @apply bg-black font-display text-xs font-thin bg-clip-text text-transparent;
   }
 }
