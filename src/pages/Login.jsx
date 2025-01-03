@@ -6,25 +6,26 @@ function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Mock login handling
     console.log('Login attempt:', { email, password });
   };
 
   return (
     <div className="min-h-[80vh] flex items-center justify-center">
-      <div className="card bg-base-100 shadow-xl w-full max-w-md">
+      <div className="card bg-white/90 backdrop-blur-lg shadow-glass w-full max-w-md border border-gray-100">
         <div className="card-body">
-          <h2 className="card-title text-3xl font-bold text-center mb-8">Login to Boost</h2>
+          <h2 className="font-['Space_Grotesk'] text-3xl font-bold text-center mb-8 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Login to Boost
+          </h2>
           
-          <form onSubmit={handleLogin} className="space-y-4">
+          <form onSubmit={handleLogin} className="space-y-6">
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Email</span>
+                <span className="label-text font-medium text-gray-700">Email</span>
               </label>
               <input
                 type="email"
                 placeholder="your@email.com"
-                className="input input-bordered w-full"
+                className="input bg-white/50 backdrop-blur-sm border-gray-200 w-full focus:border-blue-500 focus:ring-blue-500"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -33,23 +34,24 @@ function Login() {
 
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Password</span>
+                <span className="label-text font-medium text-gray-700">Password</span>
               </label>
               <input
                 type="password"
                 placeholder="••••••••"
-                className="input input-bordered w-full"
+                className="input bg-white/50 backdrop-blur-sm border-gray-200 w-full focus:border-blue-500 focus:ring-blue-500"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
               />
             </div>
 
-            <div className="card-actions justify-end mt-6">
-              <button type="submit" className="btn btn-primary w-full">
-                Login
-              </button>
-            </div>
+            <button 
+              type="submit" 
+              className="btn w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white border-0 hover:from-blue-600 hover:to-purple-600"
+            >
+              Login
+            </button>
           </form>
         </div>
       </div>

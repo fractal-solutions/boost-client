@@ -51,11 +51,11 @@ function Invest() {
               <div className="grid grid-cols-2 gap-4 my-4">
                 <div className="bg-white/10 backdrop-blur-lg p-3 rounded-lg">
                   <p className="text-sm opacity-80">Return Rate</p>
-                  <p className="text-2xl font-bold">{investment.return}</p>
+                  <p className="text-xl font-bold">{investment.return}</p>
                 </div>
                 <div className="bg-white/10 backdrop-blur-lg p-3 rounded-lg">
                   <p className="text-sm opacity-80">Duration</p>
-                  <p className="text-2xl font-bold">{investment.duration}</p>
+                  <p className="text-xl font-bold">{investment.duration}</p>
                 </div>
               </div>
               <div className="flex justify-between items-center mt-2">

@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@500;700&display=swap');
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  * {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
 .gradient-background {
   background: linear-gradient(-45deg, #f0f9ff, #e0f2fe, #dbeafe, #e0f2fe);
   background-size: 400% 400%;
@@ -25,6 +41,9 @@
     @apply text-gray-800 font-light;
   }
   h1, h2, h3, h4 {
-    @apply font-medium tracking-tight;
+    @apply font-['Space_Grotesk'] font-bold tracking-tight;
+  }
+  h1 {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
   }
 }

@@ -22,33 +22,41 @@ function Wallet() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="flex justify-between items-center gap-4 overflow-x-auto py-2 px-2">
         <button 
-          className="btn btn-ghost flex flex-col items-center gap-2 hover:shadow-neon transition-all py-6"
+          className="btn btn-ghost flex-col items-center min-w-[30px] hover:shadow-neon transition-all"
           onClick={() => setShowSendMoney(true)}
         >
-          <FaUserFriends className="text-2xl text-primary-light" />
+          <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mb-1">
+            <FaUserFriends className="text-xl text-blue-500" />
+          </div>
           <span className="text-xs">Send</span>
         </button>
         <button 
-          className="btn btn-ghost flex flex-col items-center gap-2 hover:shadow-neon transition-all py-6"
+          className="btn btn-ghost flex-col items-center min-w-[30px] hover:shadow-neon transition-all"
           onClick={() => setShowQRScanner(true)}
         >
-          <FaQrcode className="text-2xl text-primary-light" />
+          <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mb-1">
+            <FaQrcode className="text-xl text-blue-500" />
+          </div>
           <span className="text-xs">Scan</span>
         </button>
         <button 
-          className="btn btn-ghost flex flex-col items-center gap-2 hover:shadow-neon transition-all py-6"
+          className="btn btn-ghost flex-col items-center min-w-[30px] hover:shadow-neon transition-all"
           onClick={() => setShowPayment(true)}
         >
-          <FaStore className="text-2xl text-primary-light" />
+          <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mb-1">
+            <FaStore className="text-xl text-blue-500" />
+          </div>
           <span className="text-xs">Pay</span>
         </button>
         <button 
-          className="btn btn-ghost flex flex-col items-center gap-2 hover:shadow-neon transition-all py-6"
+          className="btn btn-ghost flex-col items-center min-w-[30px] hover:shadow-neon transition-all"
           onClick={() => setShowHistory(true)}
         >
-          <FaHistory className="text-2xl text-primary-light" />
+          <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mb-1">
+            <FaHistory className="text-xl text-blue-500" />
+          </div>
           <span className="text-xs">History</span>
         </button>
       </div>

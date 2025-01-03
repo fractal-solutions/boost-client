@@ -9,7 +9,7 @@ function PaymentModal({ isOpen, onClose }) {
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center">
-      <div className="modal-box bg-white/95 backdrop-blur-lg max-w-md w-full p-6 rounded-2xl shadow-xl border border-gray-100">
+      <div className="modal-box bg-white/95 max-w-md w-full p-6 rounded-2xl shadow-xl border border-gray-100">
         <button 
           onClick={onClose} 
           className="absolute right-4 top-4 w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors"
@@ -51,7 +51,7 @@ function PaymentModal({ isOpen, onClose }) {
           </button>
         </div>
       </div>
-      <div className="fixed inset-0 bg-black/20 backdrop-blur-sm -z-10" onClick={onClose}></div>
+      <div className="fixed inset-0 bg-black/20 backdrop-blur-md -z-10" onClick={onClose}></div>
     </div>
   );
 }
