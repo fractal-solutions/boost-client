@@ -10,10 +10,10 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen gradient-background">
-        <div className="min-h-screen bg-white/50 items-center backdrop-blur-lg flex flex-col">
+        <div className="min-h-screen bg-gradient-to-r from-slate-200 via-gray-200 to-zinc-200 items-center backdrop-blur-sm flex flex-col">
           <div className="blur-behind-nav"></div>
           <TopNav />
-          <main className="container mx-auto px-4 py-8 pt-3 pb-28 flex-1 overflow-y-auto">
+          <main className="container mx-auto px-4 py-1 pt-0 pb-28 flex-1 w-[97%] max-w-[840px] overflow-y-auto">
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/wallet" element={<Wallet />} />

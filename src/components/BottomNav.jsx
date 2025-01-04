@@ -5,8 +5,8 @@ function BottomNav() {
   const location = useLocation();
     
   return (
-    <div className="sticky bottom-4  justify-items-center">
-      <nav className="flex items-center gap-6  bg-black/90 backdrop-blur-lg rounded-full px-4 py-2 shadow-sm border border-gray-800">
+    <div className="sticky bottom-1  justify-items-center">
+      <nav className="flex items-center gap-3  bg-black/90 backdrop-blur-md rounded-xl px-2 py-1 shadow-sm border border-gray-900">
         <Link 
           to="/" 
           className={`flex items-center justify-center w-9 h-9 rounded-full transition-all ${

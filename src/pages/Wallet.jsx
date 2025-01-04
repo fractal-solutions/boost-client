@@ -13,16 +13,16 @@ function Wallet() {
   const [showHistory, setShowHistory] = useState(false);
 
   return (
-    <div className="space-y-6">
-      <h1 className="text-3xl font-medium tracking-tight">Wallet</h1>
-      <div className="card bg-gradient-to-r from-primary to-accent text-white shadow-glass">
+    <div className="space-y-[6px]">
+      <h1 className="text-xl font-light tracking-tight">Wallet</h1>
+      <div className="card card-normal bg-gradient-to-r from-primary to-accent text-white shadow-md">
         <div className="card-body">
-          <h2 className="font-display text-lg opacity-80">Available Balance</h2>
-          <p className="font-display text-3xl font-bold">{balance}</p>
+          <h2 className="font-display text-lg opacity-90 -p-2">Available Balance</h2>
+          <p className="font-display text-xl font-bold">{balance}</p>
         </div>
       </div>
 
-      <div className="flex justify-between items-center gap-4 overflow-x-auto py-2 px-2">
+      <div className="flex justify-between items-center gap-2 overflow-x-auto py-2 -px-1">
         <button 
           className="btn btn-ghost flex-col items-center min-w-[30px] hover:shadow-neon transition-all"
           onClick={() => setShowSendMoney(true)}
@@ -61,25 +61,25 @@ function Wallet() {
         </button>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="card bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-glass">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div className="card card-compact bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-md">
           <div className="card-body">
             <div className="flex items-center gap-4">
-              <FaAddressCard className="text-2xl opacity-80" />
+              <FaAddressCard className="text-2xl opacity-90" />
               <div>
-                <h2 className="font-display text-lg opacity-80">Wallet Address</h2>
+                <h2 className="font-display text-lg opacity-90">Wallet Address</h2>
                 <p className="text-sm font-medium">0x742d35Cc6634C0532925a3b844Bc454e4438f44e</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="card bg-gradient-to-r from-purple-500 to-purple-600 text-white shadow-glass">
+        <div className="card card-compact bg-gradient-to-r from-purple-500 to-purple-600 text-white shadow-glass">
           <div className="card-body">
             <div className="flex items-center gap-4">
-              <FaExchangeAlt className="text-2xl opacity-80" />
+              <FaExchangeAlt className="text-2xl opacity-90" />
               <div>
-                <h2 className="font-display text-lg opacity-80">Recent Activity</h2>
+                <h2 className="font-display text-lg opacity-90">Recent Activity</h2>
                 <p className="text-sm">Last transaction: 2 hours ago</p>
               </div>
             </div>
