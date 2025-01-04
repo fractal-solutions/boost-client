@@ -10,7 +10,8 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen gradient-background">
-        <div className="min-h-screen bg-white/80 backdrop-blur-lg flex flex-col">
+        <div className="min-h-screen bg-white/50 items-center backdrop-blur-lg flex flex-col">
+          <div className="blur-behind-nav"></div>
           <TopNav />
           <main className="container mx-auto px-4 py-8 pt-3 pb-28 flex-1 overflow-y-auto">
             <Routes>
