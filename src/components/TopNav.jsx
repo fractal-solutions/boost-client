@@ -3,7 +3,7 @@ import { FaUser } from 'react-icons/fa';
 
 function TopNav() {
   return (
-    <div className="sticky -top-2 md:top-2 pb-2 w-[100%] md:w-[98%] max-w-[1080px] z-50"> 
+    <div className="sticky top-0 md:top-2 pb-2 w-[100%] md:w-[98%] max-w-[1080px] z-50"> 
       <div className="bg-black/90 backdrop-blur-lg md:rounded-lg shadow-sm border border-gray-900">
         <div className="container mx-auto px-4 -py-2 md:-my-2">
           <div className="flex justify-between items-center pt-1">

@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { FaWallet, FaChartLine, FaHome } from 'react-icons/fa';
+import { HomeIcon, WalletIcon, ChartBarIcon } from '@heroicons/react/24/outline';
 
 function BottomNav() {
   const location = useLocation();
@@ -13,7 +13,7 @@ function BottomNav() {
             location.pathname === '/' ? 'text-blue-400 bg-gray-800' : 'text-gray-400 hover:text-gray-300 hover:bg-gray-800/50'
           }`}
         >
-          <FaHome className="text-2xl" />
+          <HomeIcon className="w-6 h-6" />
         </Link>
         <Link 
           to="/wallet" 
@@ -21,7 +21,7 @@ function BottomNav() {
             location.pathname === '/wallet' ? 'text-blue-400 bg-gray-800' : 'text-gray-400 hover:text-gray-300 hover:bg-gray-800/50'
           }`}
         >
-          <FaWallet className="text-2xl" />
+          <WalletIcon className="w-6 h-6" />
         </Link>
         <Link 
           to="/invest" 
@@ -29,7 +29,7 @@ function BottomNav() {
             location.pathname === '/invest' ? 'text-blue-400 bg-gray-800' : 'text-gray-400 hover:text-gray-300 hover:bg-gray-800/50'
           }`}
         >
-          <FaChartLine className="text-2xl" />
+          <ChartBarIcon className="w-6 h-6" />
         </Link>
       </nav>
     </div>
