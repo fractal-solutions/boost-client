@@ -22,7 +22,7 @@ function Wallet() {
         </div>
       </div>
 
-      <div className="flex justify-between items-center gap-2 overflow-x-auto py-2 -px-1">
+      <div className="flex justify-between items-center gap-6 overflow-x-auto py-2 -px-2 lg:px-4">
         <button 
           className="btn btn-ghost flex-col items-center min-w-[30px] hover:shadow-neon transition-all"
           onClick={() => setShowSendMoney(true)}
@@ -74,7 +74,7 @@ function Wallet() {
           </div>
         </div>
 
-        <div className="card card-compact bg-gradient-to-r from-purple-500 to-purple-600 text-white shadow-glass">
+        <div className="card card-compact bg-gradient-to-r from-purple-500 to-purple-600 text-white shadow-md">
           <div className="card-body">
             <div className="flex items-center gap-4">
               <FaExchangeAlt className="text-2xl opacity-90" />

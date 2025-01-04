@@ -45,9 +45,9 @@ function Invest() {
       
       <div className="grid grid-cols-1 gap-2">
         {mockInvestments.map((investment) => (
-          <div key={investment.id} className="card card-compact bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-md">
-            <div className="card-body">
-              <h2 className="font-display text-lg font-light">{investment.name}</h2>
+          <div key={investment.id} className="card card-compact  bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-md">
+            <div className="card-body px-4">
+              <h2 className="card-title font-display text-lg font-light">{investment.name}</h2>
               <div className="grid grid-cols-2 gap-1 -my-1">
                 <div className="bg-white/10 backdrop-blur-lg p-3 rounded-lg">
                   <p className="text-sm opacity-80">Return Rate</p>
